@@ -11,7 +11,7 @@ import java.util.List;
 
 public class FileServices {
     private static final Gson GSON = new GsonBuilder().create();
-    private static final Path PATH = Paths.get("data/movies.json");
+    private static final Path PATH = Paths.get("src/data/movies.json");
 
     public static List<Movie> readFile() {
         String json = "";
