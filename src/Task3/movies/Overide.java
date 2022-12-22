@@ -43,6 +43,8 @@ public class Overide implements Sortable {
         }
     }
 
+    /*********/
+    // использование лямбда выражения и ссылок
     @Override
     public void sortInNameAscending() {
         List<Movie> list = new ArrayList<>(movieList);
@@ -63,6 +65,7 @@ public class Overide implements Sortable {
         }
     }
 
+    /*********/
     @Override
     public void sortInYearDescending() {
         List<Movie> list = new ArrayList<>(movieList);
