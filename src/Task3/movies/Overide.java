@@ -47,7 +47,7 @@ public class Overide implements Sortable {
     public void sortInNameAscending() {
         List<Movie> list = new ArrayList<>(movieList);
 
-        list.sort(Comparator.comparing(Movie::getName));
+        list.sort((c1, c2) -> c1.getName().compareTo(c2.getName()));
         for (var v : list) {
             System.out.println(v);
         }
@@ -57,7 +57,7 @@ public class Overide implements Sortable {
     public void sortInProducerAscending() {
         List<Movie> list = new ArrayList<>(movieList);
 
-        list.sort(Comparator.comparing(Movie::getDirector));
+        list.sort((c1, c2) -> c1.getDirector().compareTo(c2.getDirector()));
         for (var v : list) {
             System.out.println(v);
         }

@@ -17,7 +17,7 @@ public class Main {
         cats.sort(Comparator.comparing(Cat::getBreed));
         Printer.print(cats);
 
-        cats.sort(((c1, c2) -> c1.getBreed().compareTo(c2.getBreed())));
+        cats.sort((c1, c2) -> c1.getBreed().compareTo(c2.getBreed()));
         Printer.print(cats);
 
         cats.sort(Comparator.comparing(Cat::getName).thenComparing(Cat::getAge));
